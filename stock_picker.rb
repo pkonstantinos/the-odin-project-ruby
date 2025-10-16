@@ -4,7 +4,7 @@ def stock_picker(prices)
   current_max_indx= 0
   prices.each_with_index do |price, index|
     
-    if(index < prices.length-1 && price < prices[index+1]) #3 9 15 8
+    if(index < prices.length-1 && price < prices[index+1])
       if(price < prices[current_min_indx])
         current_min_indx = index
       end
